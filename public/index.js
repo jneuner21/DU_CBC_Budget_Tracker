@@ -1,3 +1,7 @@
+// make sure service worker is supported -- most modern browsers support service workers -- if user has an old brower service worker is not available
+
+// navigator is basicly the browser object (property in window object) can also do if (navigator.serviceWorker) because it is attached to that object
+// if true -- (service worker available) -- then run callback
 if ("serviceWorker" in navigator) {
   // registers when window loads  apon page load -- then will kick off callback function -- listening for load event
   window.addEventListener("load", () => {
